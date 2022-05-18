@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires HTML</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+</head>
+<body>
+    <!--Je déclare mon formulaire avec la balise form-->
+    <b action="">
+        <!--Deux matières de déclarer le lable-->
+        <!-- Pseudo -->
+        <label for="pseudo">
+            <!-- input dans label -->
+            Pseudonyme
+        </label>
+        <input type="texte" name="pseudo" id="" placeholder="exemple" required>
+        <!-- L'id combiné à for permet de lier le label à l'input type précise le type de donnée récupérée, name sera utilisé en php pour récupérer la donnée, Le placeholder contient le texte qui apparaît dans l'input required précise au navigateur que le champs est à renseigner obligatoirement -->
+        <label for="mdp">
+            Mot de passe <span title="Le mot de passe peut contenir..."></span>
+        </label>
+        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Votre mail">
+        <label for="photo">Photo</label>
+        <input type="file" name="photo" id="photo">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Choix multiples</legend>
+            <!-- cases à cocher checkbox -->
+            <!-- plusieurs choix -->
+        <label for="q1">Quelle destination choisissez-vous</label>
+        <p>
+            <input type="checkbox" name="réponse01" id="q1">Italie
+            <input type="checkbox" name="réponse02" id="q1">Maroc
+            <input type="checkbox" name="réponse03" id="q1">Espagne
+        </p>
+        <!-- cases à cocher radio -->
+        <input type="radio" id="q2" name="reponse2" >En famille</input>
+        <!-- checked = coché par défaut -->
+        <input type="radio" id="q2" name="reponse2" >Entre amis</input>
+    </fieldset>
+    <br>
+    <label for="commentaires">commentaires</label>
+    <textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>
+    <!-- rows = nombre de lignes - cols = nombre de colonnes / caractères -->
+    <br>
+    <input type="submit" name="inscription" value="Envoyer">
+    <!-- Bouton envoi de formulaire -->
+    <input type="reset" name="annuler" value="annuler">
+    <!-- Bouton pour vider le formulaire -->
+    <br>
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Elements/Input" target="_blank">Petit documentation</a>
+    <br>
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">w3schools, les types d'input></a>
+    </form>
+</body>
+</html>

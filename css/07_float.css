@@ -1,0 +1,67 @@
+body{
+    margin: auto;
+    /*
+    margin: 0 auto 0 auto; => haute droite bas gache
+    
+    margin:0;
+    margin:0 auto 1; (gauche -> auto)
+     */
+
+     background-color: antiquewhite;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightsteelblue;
+
+}
+
+p{
+    background-color: mediumaquamarine;
+
+    display: inline;
+}
+
+p span{ /* sélectionne les span contenu dans des p*/
+    background-color: yellow;
+}
+
+.boite{
+    height: 11vh;
+    width: 15vh;
+    padding: 5vh;
+    background: url(../img/tiger-ga96ac81d5_640\ \(2\)\ \(1\).png); /* ( rajouter ../img/ ) pour mettre une image dans le css
+    background-repeat: no-repeat;
+    border: 5px double orchid; /* taille, style, couleur de la bordure*/
+    margin: 2vh;
+    float: left;
+    /* effet flottant, permet de placer des balises cote a cote alors que selon le flix du web standard
+    les elements se placent les uns au-dessus des autre. */
+    transition: margin 0.5s;
+
+}
+
+/*  https://outils-css.aliasdmc.fr/unites-de-longeurs-css-php 
+
+EM: relative to the parent element
+
+REM: relative to the root element(html)
+
+X: relative to the parent element
+
+VH: relative to the viewport's hight
+
+VH:: relative to the viewport's widht */
+
+.boite:hover{
+    /*  le psuedo-class : hover modifie un affichage au survol de la souris */
+
+    margin-top: 10vh;
+}
+
+.clear{
+    clear: both;
+    /* supprime l'ffet flottant*/
+}
+

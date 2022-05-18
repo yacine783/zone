@@ -1,0 +1,61 @@
+body{
+    color: white;
+    font-size: 25px; /*la taille de la police des caractere*/
+}
+
+#conteneur{
+    width: 80px;
+    margin: 0 auto;
+    border: 2px solid darkslategray; 
+}
+
+header{
+    background-color: #8e3557;
+    height: 100px;
+}
+
+nav{
+    background-color: #4a1a2c;
+    height: 100px;
+}
+
+section{
+    background-color: #787746;
+    height: 500px;
+    margin: 20px;
+}
+
+footer{
+/* on aurait pu sythétiqer le ecode en header */
+    background-color: #4a1a2c;
+    height: 100px;
+}
+
+.a, .b, .c, .d{
+    width: 50%;
+    height: 205px;
+    float: left;
+}
+
+.a{
+    background-color: #4a1a2c;
+
+}
+
+.b{
+    background-color: #787746;
+
+}
+
+.c{
+    background-color: #e6e2af;
+}
+
+.d{
+    background-color: lightblue;
+
+}
+
+/* .clear{
+           clear: both;
+ }  */

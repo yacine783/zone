@@ -1,0 +1,10 @@
+.contenu{
+    height:45em; /* hauteur*/
+    width:45em; /* hauteur */
+     margin: auto; /* centre automatique la balise*/
+    border-radius:50%; /* arrondie les angles*/
+    background: linear-gradient(to left, #40a497, #6840a4);
+    /* dégradé qui démrarre avec la premiere couleur à droite et la derniére à gauche (vioket - vert */
+
+    /* lien vers un génerateur de dégradé*/
+}
