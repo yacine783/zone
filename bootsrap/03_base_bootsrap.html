@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base bootsrap</title>
+
+    <!-- RAPPEL: les 3 balises meta ci-dessus doivent vetre en 1er dans le <hea> dans tous les autres element contenu dans <head> viennet apres -->  
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- CSS personnel TOUJOURS APRES  celui du framwork -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <!-- contenu HTML -->
+
+    <!-- bootsrap
+    
+    BS est un framework CSS, il comporte beaucoups de possibilités. ici, nous verrons ensemble ses principes 
+    de fonctionnement et les bases de son utilisation.
+    
+    a chacun d'aller explorer en details ce qu'il est possible de faire ave BS.
+
+    BS permet d'avoir un site immédiatement responsive il faut savoir que les sites internet non responsable en sont plus référencés (référencement naturel) depuis mais 2015
+
+    BS part du principe que chaque élément html de type bloc a 12 colonnes -->
+
+    <div class="container">
+        <h2> les container en blocs principaux</h2>
+    </div>
+
+    <div class="container-fluid">
+        <p>.container-fluid</p>
+    </div>
+
+    <div class="container-fluid c4">
+        <p>.container</p>
+    </div>
+
+    <!-- 
+        la classe .container-fluid de BS (bootsrap) va s'occuper 100% de la largeur de l'ecran
+        si je l'utilise imbriquée dans unn autre element de BS bien entendu ce bloc ou occuppera 100% de la largeur disponible 
+        ( qui est definie par l'element parent )
+
+        La classe .container de BS permet de travailler sur une page occupant environ 70% de la largeur de L'écran dont le contenu est centré (margin: 0 auto;)
+
+        par defaut si je travaille sans declarer de div avec une classe .container ou .container-fluid l'affichage se fait 100% de largeur 
+     -->
+
+     <div class="container">
+         <h2>les systéme de grilles </h2>
+         <h3>les lignes .row</h3>
+
+         <row class="row c1"></row>
+         <row class="row c2"></row>
+         <row class="row c3"></row>
+         <!--  pour chaque nouveau bloc de code je passe à la ligne avec 
+            une div à la quelle jje let la classe .row -->
+
+            <h3>les colonnes .col</h3>
+            
+            <div class="row no-gutters">
+                <div class="col c1">
+                    une colonne
+                </div>
+                <div class="col c2">
+                    une colonne
+                </div>
+                <div class="col c3">
+                    une colonne
+                </div>
+            </div>
+            <!-- pourquoi les 3 colonnes ont l'air de deparsser à droite et a gauche de l'alignement des titres 
+            
+              => les .container .container-fluid de  BS  ont un padding-left
+               et padding-right de 15px
+              => les .row de BS ont une morgin-left et une margin-right
+              de -15px-
+              
+              pour les supprimer :
+              => on les supprime maintenant en css sur les marges des .row
+              => ou on utilise la classe .no-gutters de BS mais on supprimera les marges et 
+              les paddings en meme temps-->
+
+              <h3>pareil avec 5 colonnes par exemple .....</h3>
+
+              <div class="row">
+                  <div class="col c1">
+                      une colonne
+                  </div>
+                  <div class="col c2">
+                      une colonne
+                  </div>
+                  <div class="col c3">
+                      une colonne
+                  </div>
+                  <div class="col c4">
+                      une colonne
+                  </div>
+                  <div class="col c5">
+                      une colonne
+                  </div>
+              </div>
+
+              <h3>utilisation des media-queries de BS .col-*</h3>
+
+              <!-- 
+                  la classe col-md-a
+                  col => colonne
+                  ce mot sera invariable
+
+                  md = "medium"
+                  les lettres correspondent au comportement attendu selon 
+                  la taille d'ecran BS gére les
+
+                  .col-* (extra smal - téléphone)
+                  .col-sm-* (small - tablette
+                  .col-md-* 'medium - 15 pouces)
+                  .col-lg-* (large - écran large)
+                  .col-xl-* (extra large - <= 1200px)
+                  ces valeurs sont des 'breakpoint' ou 'points d'arret' : 
+                  uune peu comme une frontiere,, des qu'on la depasse on change de réglage
+
+                  (le comportement de BS est prévue pour etre 'mobile first' : c'est a dire que les breakpoint sont a lire " a partir de la taille md et plus " en clair si l'élément de l'utilisateur est plus petit que le brakpoint alors l'élement prend 100% de la place disponible]
+
+                  le chiffre * correspont au nombre de colonnes prises par l"élément valeur possiblle : de 1 à 12.
+
+                  ave bootstrap chaque élement de structure contient par défaut 12 colonnes 
+                  -->
+
+                  <div class="row">
+                      <div class="col c2">
+                          une colonne
+                      </div>
+                      <div class="col-6 c3">
+                          une colonne 
+                      </div>
+                      <div class="col c4">
+                          une colonne 
+                      </div>
+                  </div>
+
+                  <!-- ou encore -->
+                  <div class="row">
+                      <div class="col c2">col c2</div>
+                      <div class="col-10 c3">col-10 c3</div>
+                      <div class="col c4">col c4</div>
+                  
+                  </div>
+          <hr>     
+
+                 <div class="row">
+                      <div class="col-3 c2">col-3 c2</div>
+                      <div class="col c3">col c3</div>
+                      <div class="col-7 c4">col-7 c4</div>
+                  </div>
+
+                  <!-- par contre si je depasse 12 colonne j'obtiens un retour à la ligne des colonnes :
+                 -->
+
+                  <div class="row">
+                      <div class="col-4 c2">col-4 c2</div>
+                      <div class="col-6 c3">col-6-10 c3</div>
+                      <div class="col-4 c4">col-4 c4</div>
+                  </div>
+
+                  <h2>les marges .offset</h2>
+
+                  <!-- 
+                      si l'on veut mettre en place une marge avec BS, il faut utiliser .offser- les marges sont basées sur les colonnes 
+                      de la grilles de BS par exemple .offeset-md-1 veut dire 1 colonne de marge à gauche (les marges se situent toujours a gauche de l'élémen tavec bootstrap)
+                   -->
+
+                   <div class="row">
+                       <div class="col-md-4 c1"> col-md-4</div>
+                       <div class="col-md-4 offset-md-3 c2"> col-md-4 offset-md-3 c2</div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-3 offset-md-3 c3"></div>
+                       <div class="col-md-3 offset-md-3 c4"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-6 offset-md-3 c5">col-md-6 offset-md-3 c5</div>
+                   </div>
+                   <hr>
+
+                   <div class="row">
+                       <div class="col-md-5 c2">col-md-5 c2</div>
+                       <div class="col-md-5 offset-md-2 c4">col-md-5 offset-md-2 c4</div>
+                   </div>
+
+                   <div class="row">
+                       <div class="col-md-8 c3">.co-md-8 c3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at perspiciatis, reprehenderit molestiae accusamus obcaecati laboriosam quibusdam earum, explicabo cumque, perferendis laborum minus praesentium voluptates? Beatae praesentium quam impedit nulla?</div>
+
+                       <div class="col-md-3 offset-md-1 c1">.co-md-8 c3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at perspiciatis, reprehenderit molestiae accusamus obcaecati laboriosam quibusdam earum, explicabo cumque, perferendis laborum minus praesentium voluptates? Beatae praesentium quam impedit nulla?</div>
+                       
+                   </div>
+
+                   <h2>amignelent de texte</h2>
+
+                   <div class="row">
+                       <div class="col">
+                           <p class="text-left c1">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi laudantium ex,
+                                voluptatibus soluta eveniet, obcaecati blanditiis eum quidem illum harum dolorum tempor
+                                a nisi consequatur. Vero optio culpa quos similique.
+                           </p>
+
+                           <hr />
+                           <p class="text-center c2">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi laudantium ex,
+                                voluptatibus soluta eveniet, obcaecati blanditiis eum quidem illum harum dolorum tempor
+                                a nisi consequatur. Vero optio culpa quos similique.
+                           </p>
+                           <hr />
+                           <p class="text-left c3">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi laudantium ex,
+                                voluptatibus soluta eveniet, obcaecati blanditiis eum quidem illum harum dolorum tempor
+                                a nisi consequatur. Vero optio culpa quos similique.
+                           </p>
+                       </div>
+                   </div>
+
+
+     </div>
+    
+
+
+
+
+
+    
+</body>
+</html>

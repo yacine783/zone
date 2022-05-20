@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Les liens permettent de se deplacer à l'insterieur des rubrique d'un site,, 
+    ce sont pour les principaux des liens de navigation et
+     on les regroupe dans un menu (barre de navigation)'  -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu de navigation</title>
+    <link rel="stylesheet" href="css/14_selecteurs.css">
+</head>
+<body>
+    <!-- la balise nav est dédié a la navigation du site -->
+    <nav>
+        <a href="#">home</a>
+        <a href="#">edito</a>
+        <a href="#">panier</a>
+        <a href="#">faq</a>
+        <a href="#">nous contacter</a>
+    </nav>
+
+    <section class="container">
+        <h3>aide mémoire des selecteur CSS déja vus</h3>
+        <ul>
+            <li>
+                <mark>*</mark>selectionne tous les éléments de la page
+                HTML
+            </li>
+            <li>
+                <mark>.ma-jolie-nav</mark> sélectionne tous les élements ayant le 
+                nom de la class ".ma-jolie-nav"
+            </li>
+            <li>
+                <mark>#nom-unique-id</mark> selectionne l'élément ayant l'id "#nom-unique-id"
+                <li>
+                    <mark>div, article, aside</mark> sélectionne toutes les balises &lt;div>, &lt;article> et &lt;aside>
+                </li>
+                <li>
+                    <mark>nav a</mark> selectionne tous les liens de la nav et active une animation lors du survol de la souris
+                </li>
+            </li>
+        </ul>
+        <br>
+    </section>
+
+    <div class="container1">
+        <section class="container2">
+
+            <h3> propriétés CSS utilisé dans cette page</h3>
+            <h4>décriver leur usage et leurs valeurs possible en fonction de ce que vous avez deja vu </h4>
+
+            <ol>
+                <li>
+                    background<!--couleur du fond de l'element (on peut attribuer plusieurs valeur comme :repeat,url(''), fixed ...)-->
+                </li>
+                <li>
+                    color: <!--couleur de la police, accepte hexadicimals, rgb, hs1 et couleur en anglais-->
+                </li>
+                <li>
+                    float: <!--effet flottant a gauche droite ou both-->
+                </li>
+                <li>
+                    font-family:<!--police d'ecriture-->
+                </li>
+                <li>
+                    font-size: <!--taille de la police, nombre avec des unités : em, rem, px, %-->
+                </li>
+                <li>
+                    height : <!--hauteur de l'élément, nombre avec des unité : vh, vw, px, %-->
+                </li>
+                <li>
+                    left: <!-- position a partir de la gauche de la fenetre-->
+                </li>
+                <li>
+                    line-height : <!--hauteur de l'interligne-->
+                </li>
+                <li>
+                    margin : <!--marge exterieurs, en jaune dans la console, nombre avec des unité : em, rem, px, x-->
+                </li>
+                <li>
+                    padding: <!--marge intérieurs, en violet dans console, nombre avec des unités : em, rem, px, x-->
+                </li>
+                <li>
+                    position: <!-- position dans l'element de la page ( on n'a utiliser que la valeur fixed et relative pour l'instant)-->
+                </li>
+                <li>
+                    text-align: <!-- alignement de text, left, right, center et justify-->
+                </li>
+                <li>
+                    text-decoration: <!-- changement de valeur héritées ( ici le sourligné qui est standar pour les liens sous tous les navigateurs est supprimé, nono et underline)-->
+                </li>
+                <li>
+                    top: <!-- position a partir du haut de la fenetre-->
+                </li>
+                <li>
+                    transition<!--temps de transition lors d'une animation ( ici sur les liens de la barre du menu) (raccourcis pour transition-duration)-->
+                </li>
+                <li>
+                    width: <!--largeur de l'element par rapport a la taille du parent on inqdique une valeur relative (x, em, ...) ou fixe(px)-->
+                </li>
+
+            </ol>
+        </section>
+
+        <section class="container3">
+            <h3>propriété CSS a rechercher</h3>
+            <h4>recherchez les propriétés ci-dessous, faites des test avec sur cette page depuis la la console de debuggage pour 
+                tester les valeurs qu'elles peuvents prensre (f23 dans le navigateur)</h4>
+
+            <ol>
+                <li>
+                    font-weight: <!-- definit la graisse de la police, on peut utiliser normal, bold, bolder, lighter, ou des valeurs de 1 à 1000 meme avec des virgules-->
+                </li>
+                <li>
+                    letter-spacing: <!-- definit l'epace entre les lettres, on peut mettre normal ou des valeurs comme em, px, % et des virgules-->
+                </li>
+                <li>
+                    word-spacing: <!-- definit l'espace entre les mots, on peut mettre normal ou des valeurs comme em, px % et des virgules-->
+                </li>
+                <li>
+                    text-shadow: <!-- applique une ombre sur le texte, axe des x, axe des y, fondu, couleur, 1px 1px 2px blacl-->
+                </li>
+                <li>
+                    backround-image: <!-- definit un motif on arriere plan, on peut mettre un degradé ou  une url d'image, on peut en mettre plusieurs, 
+                        backrounds-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)-->
+                </li>
+                <li>
+                    backround-size: <!-- défint la title du fond, soit cover soit contain, soit une valeur ou deux (largeur hauteur en %, em, px)-->
+                </li>
+                <li>
+                    opacity: <!-- definit l'opacité(transparence), de 0 invisible en passant par 0.5 à moitié transparent -->
+                </li>
+                <li>
+                    border-style: <!--definit le type de bordeur comme pour padding(top, right), valeurs possibles entre autre: dotted dashed solid double groove ridge-->
+                </li>
+                <li>
+                    box-shadow: <!--créé une ombre à la balise, x | y | blue-radius| spread-radius| color 2px 2px 2px 1px rgba(0, 0, 0, 0.2)-->
+                </li>
+                <li>
+                    list-style-image: <!-- remplace la puce d'un li par une image, list-style-image:url('test.gif')-->
+                </li>
+                <li>
+                    border: <!-- permet de créer une bordure, on y met plusieurs valeurs, largeur style couleur,
+                    ou moins : border: solid;-->
+                </li>
+                <li>
+                    border-radius: <!--créé des angles arrondis avec des valeurs comme em, px, %, ordre: haut: à gauche, haut droit, bas drpot, bas gauche-->
+                </li>
+                <li>
+                    border-width: <!-- definit l'epaisseur de bordure, valeur: px em, mais aussi: thin, medium, thich, order comme pour padding-->
+                </li>
+                <li>
+                    font-variant: <!-- modifie le style de la police plusieurs valeurs possible font-variant:
+                    small-caps;-->
+                </li>
+                <li>
+                    background-color: <!-- spécifie la couleur d'arriere plan de la balise, accepte les rgb, rgba, hexadicimals, nom de la couleur enn anglais, hsl et hsla (pareil à rgb mais avec des pourcentage)-->
+                </li>
+                <li>
+                    ! important: <!-- a mettre a la fin d'une ligne pour forcer le navigateur a l'utiliser, il ne sera pas surchargé,
+                         a utiliser si l'on est forcé, peu ne pas fonctionner en cas d'import de bibliothéque-->
+                </li>
+            </ol>    
+        </section>
+        <div class="clear"></div>
+    </div><!--fin de container-->
+
+    <section class="container container4">
+        <h3>pour aller plus loin en CSS quelques pistes..</h3>
+        <ul>
+            <il>
+                <a href="https://developer.mozilla.org/fr/"> Mdn le site officiel</a>
+            </il>
+
+            <li>
+                <a href="https://w3school.com/css/default.asp">le site w3schools (partie css)</a>
+            </li>
+
+            <li>
+                <a href="https://tympanus.net/cadrops/">codrops, ; reference, tutes...</a>
+            </li>
+
+            <li>
+                <a href="https://flukeot.github.io/"> jeu avec les lecteurs CSS</a>
+            </li>
+            
+            <li>
+                <a href="https:flexboxfroggy.com"> un autre jeu sur le systéme des "flexbox"</a>
+            </li>
+            
+            <li>
+                <a href="https://viewportsizer.com/devices/"> diffenrent taille d'ecrans</a>
+            </li>
+            
+            <li>
+                <a href="https://learnlayout.com/"> Tutos simple en francais</a>
+            </li>
+           
+            <li>
+                <a href="https://pureces.io">encore des tutos</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    
+</body>
+</html>
