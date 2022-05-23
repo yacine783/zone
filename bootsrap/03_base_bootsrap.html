@@ -220,13 +220,309 @@
                                 a nisi consequatur. Vero optio culpa quos similique.
                            </p>
                            <hr />
-                           <p class="text-left c3">
+                           <p class="text-right c3">
                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi laudantium ex,
                                 voluptatibus soluta eveniet, obcaecati blanditiis eum quidem illum harum dolorum tempor
                                 a nisi consequatur. Vero optio culpa quos similique.
                            </p>
+                           <hr>
                        </div>
                    </div>
+
+                   <h3>imbriquer des blocs de la grille : 'nesting'</h3>
+
+                   <div class="row">
+                       <div class="col-sm-9 c4">
+                           1er niveau : .col-sm-9
+                           <div class="row">
+                               <div class="col-8 col-sm-6 c1">
+                                   2eme niveau : .col-8 .col-sm-6
+                               </div>
+
+                               <div class="col-4 col-sm-6 c3">
+                                   2eme niveau : col-4 col-sm-6
+                                   <div class="row">
+                                       <div class="col-4 c4">3eme</div>
+                                       <div class="col-4 c1">3eme</div>
+                                       <div class="col-4 c5">3eme</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-sm-3 c2">1er niveau: .col-sm-3</div>
+                   </div>
+                   <hr>
+
+                   <h2>les couleurs de BS</h2>
+
+                   <h1>les alertes</h1>
+                   <div class="alert alert-primary" role="alert">
+                       Primary
+                   </div>
+                   <div class="alert alert-secondary" role="alert">
+                       secondary
+                   </div>
+                   <div class="alert alert-success" role="alert">
+                       success
+                   </div>
+                   <div class="alert alert-danger" role="alert">
+                       danger
+                   </div>
+                   <div class="alert alert-warning" role="alert">
+                       warning
+                   </div>
+                   <div class="alert alert-info" role="alert">
+                       info
+                   </div>
+                   <div class="alert alert-might" role="alert">
+                       light
+                   </div>
+                   <div class="alert alert-dark" role="alert">
+                       dark
+                   </div>
+
+                   <hr />
+
+                   <h3>Les boutons</h3>
+
+                   <!-- button.btn -->
+                   <button type="button" class="btn btn-primary">primary</button>
+                   <button type="button" class="btn btn-secondary">secondary</button>
+                   <button type="button" class="btn btn-success">success</button>
+                   <button type="button" class="btn btn-danger">danger</button>
+                   <button type="button" class="btn btn-warning">warning</button>
+                   <button type="button" class="btn btn-info">info</button>
+                   <button type="button" class="btn btn-light">light</button>
+                   <button type="button" class="btn btn-dark">dark</button>
+
+
+                   <button type="button" class="btn btn-link">link</button>
+
+                   <hr>
+
+                   <button type="button" class="btn btn-outline-primary">outlink</button>
+                   <button type="button" class="btn btn-outline-secondary">secondary</button>
+                   <button type="button" class="btn btn-outline-danger">danger</button>
+                   <button type="button" class="btn btn-outline-warning">warning</button>
+                   <button type="button" class="btn btn-outline-success">success</button>
+                   <button type="button" class="btn btn-outline-info">info</button>
+                   <button type="button" class="btn btn-outline-light">light</button>
+                   <button type="button" class="btn btn-outline-dark">dark</button>
+
+                   <hr>
+                   🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+                   <h2>les formulaires</h2>
+
+                   <form action="">
+                       <div class="form-group">
+                           <label for="email">email</label>
+                           <input type="email" class="form-controle" id="email" aria-describedby="emailhelp" placeholder="votre email">
+                           <small id="emailhelp" class="form-text text-muted"> nous ne diffusons pas vos coordonnées</small>
+                       </div>
+                       <div class="form-group">
+                           <label for="mdp"> mot de passe</label>
+                           <input type="password" name="form-control" id="mdp" placeholder="mot de passe">
+                       </div>
+                       <button type="submit" class="btn btn-outline-info btn-block">envoyer</button>
+                   </form>
+
+                   <!-- BS permet des mises en formes variées des formulaires => à regarder dans les exemples fournis en documentation -->
+
+
+🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+                       
+                     <h2>les tableaux</h2>
+        <div class="col-6 m-auto">
+                      <table class="table table-warning table-hover">
+               <thead>
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                  </tr>
+              </tbody>
+          </table>  
+         </div>       
+
+         <h2>le carousel</h2>
+
+         <!-- veiller a prendre des images qui ont la meme taille en px -->
+
+             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/cat-g9c4e89d5b_1920.jpg" class="d-block w-100" alt="First Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/fleur de lotus.jpg" class="d-block w-100" alt="Second Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/tiger-ga96ac81d5_640 (2) (1).png" class="d-block w-100" alt="Third Slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+
+                <h2>la navbar</h2>
+                <nav class="navbar navbar-light" style="background-color: #f7934c;">
+                <a class="navbar-brand"></a>
+
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+                 </form>
+
+
+
+              </nav>
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">Hidden brand</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<nav class="navbar bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
 
      </div>

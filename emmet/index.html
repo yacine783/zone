@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>coder avec emmet</h1>
+    </header>
+
+    <nav>
+        <a href="#html">html</a>
+        <a href="#css">css</a>
+    </nav>
+
+   <!-- h2#html{html}= <h2 id="html">html</h2> -->
+    <h2 id="html">html</h2>
+
+<!-- div>h3+code*2+p -->
+    <div>
+        <h3>ajouter un element enfant: ">" </h3>
+        <code>li>p</code>
+        <br>
+        <code>ul>li>p</code>
+        <p>resultat</p>
+    </div>
+
+    <center><img src="img/em1.png" alt="emmet example"></center>
+
+    <!-- (div>h3+code+p(résultat :})+center>img -->
+    <div>
+        <h3></h3>
+        <code></code>
+        <p>résultat :</p>
+    </div>
+    <center><img src="img/em2.png" alt=""></center>
+
+    <div>
+        <h3>multiplier un element : "*"</h3>
+        <code>ul>li*3>p+img</code>
+        <p>resultat :</p>
+    </div>
+    <center> <img src="img/em3.png" alt=""></center>
+
+    <div>
+    <h3>ajouter une classe : "."</h3>
+    <code>ul.wrapper</code>
+    <br>
+    <code>.container</code>
+    <p>resultat : </p>
+    <center><img src="img/em4.png" alt=""></center>
+    </div>
+
+    <div>
+        <h3>grouper des element : "()"</h3>
+        <code>ul>(header>ul>i*2>a)+footer>p</code>
+        <br>
+        <code>ul>(li>p+img+a)+li*2>p+img</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em5.png" alt=""></center>
+
+
+    <div>
+        <h3>inser du text dnas un element : "{}"</h3>
+        <code>a{click me}</code>
+        <br>
+        <code>p>(click me)+a{here}+{to continue</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em6.png" alt=""></center>
+    
+    <div>
+        <h3>ajouet une numerosation : "$"</h3>
+        <code>ul>li.item$5</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em7.png" alt=""></center>
+
+    <div>
+        <h3>commencer la numérosation au chiffre voulu : "$@x"</h3>
+        <code>ul>li.item$@3*5</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em8.png" alt=""></center>
+
+
+    <div>
+        <h3>numéroter dans l'ordre décroissant : "$@-"</h3>
+        <code>ul>il.item@-{pizza $@-}*5</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em9.png" alt=""></center>
+
+
+    <div>
+        <h3>nremonter d'un element enfant : "^"</h3>
+        <code>div>p>em{hello}^a</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em10.png" alt=""></center>
+
+
+    <div>
+        <h3>ajouter un attribut : "[attr_name="valeur"</h3>
+        <code>omg[src"https://picsum.photos/send/picsum/200/300</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em10.png" alt=""></center>
+</body>
+
+
+    <div>
+        <h3>en bref :"^"</h3>
+        <code>odiv.list>ul>(li.item$>paragraph $)+img[src="https://placecage.com/300/300"])+li.item$@2*4>p(paragraph $@2)+img
+            "https://pacesheen.com/$@1$$/$@5$$"]+a^^^^foter>p(place cage vrs palecsheen}</code>
+        <p>resultat</p>
+    </div>
+    <center><img src="img/em12.png" alt=""></center>
+
+    <div>
+        <p>le premier regroupement un &lt;li> qui a 2 enfants : amt;p> qui contiennent du text et une &lt;imh> qui a un attribut</p>
+        <p>le groupement suivant conteint un &lt;li> 2 a 5, on multipliant des listes les noms de classe, contenu de paragraphe et valeur d'attribut s'incrément selon les syntaxes différents
+            ,chaque &lt;li> contien aussi un ancre, invarable.
+        </p>
+        <p>elnfin les 3^^^ permettent de remonter les element parent pour placer le &lt;footer>au meme niveau que la &lt;div> ( sortir de &lt;li> puit &lt;il> puis de &lt;div p
+            our donner a dernier un &lt footer>"frere")</p>
+
+        
+    </div>
+     
+<      
+    <h2 id="css"></h2>
+
+    <div>
+        <p>quelques raccourcis</p>
+    </div>
+
+
+    <center>
+        <img src="img/em13.png" alt="">
+    </center>
+</body>
+</html>
